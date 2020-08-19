@@ -1,0 +1,52 @@
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // padding-top: 89px;
+
+  @media (max-width: $media-md) {
+    background-image: none !important;
+    padding: 0;
+  }
+
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 170px;
+    padding-bottom: 170px;
+
+    @media (max-width: $media-md) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      color: #fff;
+      font-style: italic;
+      font-size: 60px;
+      line-height: normal;
+      font-weight: $light;
+      // font-family: $font-2;
+
+      @media (max-width: $media-lg) {
+        font-size: 55px;
+      }
+
+      @media (max-width: $media-md) {
+        font-size: 50px;
+        color: #000;
+      }
+
+      @media (max-width: $media-sm) {
+        font-size: 37px;
+      }
+
+      @media (max-width: $media-xs) {
+        font-size: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.home-banner {
+  position: relative;
+  .banner-slider {
+    img {
+      max-height: 90vh;
+      object-fit: cover;
+      width: 100%;
+      @media (max-width: $media-xs) {
+        min-height: 90vh;
+      }
+    }
+    .slick-arrow {
+      display: none !important;
+    }
+    .slick-dots {
+      margin: 0;
+      padding: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 50px;
+      left: calc(50% - 35px);
+      right: auto;
+      @media (max-width: $media-md) {
+        bottom: 30px;
+      }
+      @media (max-width: $media-xs) {
+        bottom: 15px;
+        left: calc(50% - 10px);
+      }
+      li {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        overflow: hidden;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+        @media (max-width: $media-xs) {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        button {
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          margin: 0;
+          border: 0;
+          overflow: hidden;
+          background-color: #ebebe7;
+          color: transparent;
+          border-radius: 50%;
+          display: block;
+        }
+      }
+    }
+  }
+  .banner-text {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .container {
+      height: 100%;
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      justify-content: center;
+      h1 {
+        max-width: 1000px;
+        width: 100%;
+        margin-bottom: 100px;
+        color: #fff;
+        @media (max-width: $media-xs) {
+          margin-bottom: 60px;
+        }
+      }
+      .btn-3 {
+        color: #fff;
+      }
+    }
+  }
+}

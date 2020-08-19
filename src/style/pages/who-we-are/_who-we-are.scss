@@ -1,0 +1,160 @@
+.who-we-are {
+  width: 100%;
+  display: block;
+
+  .right-image-sec {
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      width: calc(50% - 100px);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../static/jpeg/h-store.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      @media (max-width: $media-md) {
+        display: none;
+      }
+    }
+    .flex {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    article {
+      width: 50%;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      padding-right: 40px;
+
+      @media (max-width: $media-lg) {
+        padding-top: 180px;
+        padding-bottom: 180px;
+      }
+      @media (max-width: $media-md) {
+        padding-top: 140px;
+        padding-bottom: 140px;
+        width: 100%;
+        padding-right: 0;
+      }
+      @media (max-width: $media-xs) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      h2 {
+        color: #4d4d4b;
+        padding-bottom: 80px;
+        @media (max-width: $media-md) {
+          padding-bottom: 60px;
+        }
+        @media (max-width: $media-xs) {
+          padding-bottom: 40px;
+        }
+      }
+      .img {
+        img {
+          width: 100%;
+        }
+      }
+      &:last-child {
+        display: none;
+        @media (max-width: $media-md) {
+          display: block;
+        }
+      }
+      @media (max-width: $media-md) {
+        &:first-child {
+          padding-top: 60px;
+          padding-bottom: 0;
+        }
+        &:last-child {
+          padding-top: 40px;
+          // padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .left-image-sec {
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      width: calc(50% - 100px);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../static/jpeg/whoweare-pic2.jpg");
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      @media (max-width: $media-md) {
+        display: none;
+      }
+    }
+    .flex {
+      margin-left: 0;
+      margin-right: 0;
+      @media (max-width: $media-md) {
+        flex-direction: column-reverse;
+      }
+    }
+    article {
+      width: 50%;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      padding-right: 40px;
+
+      @media (max-width: $media-lg) {
+        padding-top: 180px;
+        padding-bottom: 180px;
+      }
+      @media (max-width: $media-md) {
+        padding-top: 140px;
+        padding-bottom: 140px;
+        width: 100%;
+        padding-right: 0;
+      }
+      @media (max-width: $media-xs) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      h2 {
+        color: #4d4d4b;
+        padding-bottom: 80px;
+        @media (max-width: $media-md) {
+          padding-bottom: 60px;
+        }
+        @media (max-width: $media-xs) {
+          padding-bottom: 40px;
+        }
+      }
+      .img {
+        display: none;
+        @media (max-width: $media-md) {
+          display: block;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      &:last-child {
+      }
+      @media (max-width: $media-md) {
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.content_with_icons {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media (max-width: $media-lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $media-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $media-xs) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  figure {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    @media (max-width: $media-md) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: $media-xs) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .svg_image {
+      padding-right: 40px;
+
+      @media (max-width: $media-xs) {
+        padding-right: 20px;
+      }
+
+      img {
+        width: 83px;
+        display: block;
+
+        @media (max-width: $media-md) {
+          width: 60px;
+        }
+        @media (max-width: $media-xs) {
+          width: 40px;
+        }
+      }
+    }
+
+    figcaption {
+      h6 {
+        margin: 0;
+        font-family: $font-2;
+        font-weight: $semi-bold;
+        font-size: 25px;
+        line-height: 35px;
+        letter-spacing: 0.03rem;
+        padding-bottom: 5px;
+        // text-transform: uppercase;
+
+        @media (max-width: $media-lg) {
+          font-size: 24px;
+          line-height: 34px;
+        }
+
+        @media (max-width: $media-md) {
+          font-size: 22px;
+          line-height: 32px;
+        }
+
+        @media (max-width: $media-sm) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        @media (max-width: $media-xs) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+
+      span {
+        font-family: $font-1;
+        font-weight: $light;
+        letter-spacing: normal;
+        font-style: 18px;
+        line-height: 28px;
+        color: #000;
+        display: block;
+
+        @media (max-width: $media-lg) {
+          font-style: 17px;
+          line-height: 27px;
+        }
+
+        @media (max-width: $media-md) {
+          font-style: 16px;
+          line-height: 26px;
+        }
+
+        @media (max-width: $media-sm) {
+          font-style: 15px;
+          line-height: 25px;
+        }
+
+        @media (max-width: $media-xs) {
+          font-style: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

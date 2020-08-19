@@ -1,0 +1,13 @@
+.life_warranty_inner {
+  @import "para-stage";
+  @import "content-with-icons";
+
+  .life_common_width {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,232 @@
+.awwards {
+  // display: none;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  @media (max-width: $media-lg) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+  @media (max-width: $media-md) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  @media (max-width: $media-xs) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .news_image {
+    @media (max-width: $media-xs) {
+      display: none;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  article {
+    // background-color: #333332;
+  }
+
+  h5 {
+    text-align: left;
+    opacity: 1;
+    margin: 0;
+    font-size: 30px;
+    line-height: normal;
+    font-weight: $medium;
+    font-family: $font-2;
+    letter-spacing: 4px;
+    color: #4d4d4b;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    @media (max-width: $media-md) {
+      font-size: 13px;
+    }
+    @media (max-width: $media-xs) {
+      font-size: 12px;
+    }
+  }
+  .awwards-slider {
+    display: flex;
+
+    padding-bottom: 30px;
+    overflow-x: scroll;
+    position: relative;
+
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+
+    &::before {
+      content: "";
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: red;
+      cursor: pointer;
+    }
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: unset;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000;
+      outline: 0;
+    }
+
+    aside {
+      padding-right: 20px;
+      .content {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+
+        img {
+          width: 100%;
+          display: block;
+          max-width: 100px;
+        }
+        span {
+          display: inline-block;
+          padding-left: 15px;
+          text-align: left;
+          letter-spacing: 0.9px;
+          color: #333332;
+          font-weight: $regular;
+          font-size: 16px;
+          line-height: normal;
+        }
+      }
+    }
+    img {
+      //   width: 40%;
+      display: block;
+      max-height: 500px;
+      @media (max-width: $media-xs) {
+        max-height: 300px;
+      }
+    }
+  }
+
+  //VARIABLES BECAUSE CSS PREPROCESSORS ARE COOL
+  $gray: #555;
+  $yellow: #f2e968;
+  $white: #efefef;
+
+  //ENABLE CSS GRID FOR LIFT OFF  🚀
+  @supports (display: grid) {
+    .grid-item {
+      color: #fff;
+      // background: skyblue;
+      // padding: 3.5em 1em;
+      font-size: 1em;
+      font-weight: 700;
+    }
+
+    .main {
+      // color: lighten($gray, 25%);
+      // background-color: lighten(skyblue, 60%);
+      grid-area: main;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .items {
+      position: relative;
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      transition: all 0.2s;
+      transform: scale(1);
+      will-change: transform;
+      user-select: none;
+      cursor: pointer;
+      padding-bottom: 30px;
+      &::-webkit-scrollbar {
+        height: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: unset;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #000;
+        outline: 0;
+      }
+    }
+
+    .items.active {
+      background: rgba(255, 255, 255, 0.3);
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      transform: scale(0.98);
+    }
+
+    .item {
+      display: inline-block;
+      // background: skyblue;
+      // min-height: 250px;
+      // min-width: 400px;
+      // margin: 2em 1em;
+      // width: calc(100% /);
+      // @media screen and (max-width: 500px) {
+      //   min-height: 200px;
+      //   min-width: 200px;
+      // }
+      aside {
+        padding-right: 20px;
+        .award_image {
+          max-height: 600px;
+          display: block;
+          @media (max-width: $media-md) {
+            max-height: 400px;
+          }
+          @media (max-width: $media-xs) {
+            max-height: 250px;
+          }
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          padding-top: 15px;
+
+          img {
+            width: 100%;
+            display: block;
+            max-width: 100px;
+            @media (max-width: $media-xs) {
+              max-width: 60px;
+            }
+          }
+          span {
+            display: inline-block;
+            padding-left: 15px;
+            text-align: left;
+            letter-spacing: 0.9px;
+            color: #333332;
+            font-weight: $regular;
+            font-size: 16px;
+            line-height: normal;
+            @media (max-width: $media-xs) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

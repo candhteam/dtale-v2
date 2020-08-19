@@ -1,0 +1,30 @@
+.home-introduction {
+  background-color: #333332;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  @media (max-width: $media-lg) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+  @media (max-width: $media-md) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  @media (max-width: $media-xs) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  h2 {
+    padding-bottom: 80px;
+    @media (max-width: $media-md) {
+      padding-bottom: 60px;
+    }
+    @media (max-width: $media-xs) {
+      padding-bottom: 40px;
+    }
+  }
+  .image {
+    margin-top: 80px;
+  }
+}

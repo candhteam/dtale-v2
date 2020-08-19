@@ -1,0 +1,179 @@
+.para_stage {
+  background: #e7ebeb;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media (max-width: $media-lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (max-width: $media-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: $media-sm) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      text-align: center;
+      margin: 0;
+      font-weight: $light;
+      //   font-family: $font2;
+      font-size: 25px;
+      line-height: 35px;
+      letter-spacing: normal;
+      color: #000;
+
+      @media (max-width: $media-xlg) {
+        font-size: 24px;
+        line-height: 34px;
+      }
+
+      @media (max-width: $media-lg) {
+        font-size: 22px;
+        line-height: 32px;
+      }
+
+      @media (max-width: $media-md) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @media (max-width: $media-xs) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    h5 {
+      margin: 0;
+      padding: 0;
+      font-family: $font-2;
+      font-weight: $medium;
+      font-style: italic;
+      font-size: 36px;
+      line-height: 46px;
+      color: #000;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-align: center;
+      padding-bottom: 10px;
+
+      @media (max-width: $media-xlg) {
+        font-size: 34px;
+        line-height: 44px;
+      }
+
+      @media (max-width: $media-lg) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @media (max-width: $media-md) {
+        font-size: 28px;
+        line-height: 38px;
+      }
+
+      @media (max-width: $media-xs) {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+
+    span {
+      //   font-family: $font2;
+      font-weight: $light;
+      letter-spacing: normal;
+      font-style: 18px;
+      line-height: 28px;
+      color: #000;
+      display: block;
+      text-align: center;
+
+      @media (max-width: $media-lg) {
+        font-style: 17px;
+        line-height: 27px;
+      }
+
+      @media (max-width: $media-md) {
+        font-style: 16px;
+        line-height: 26px;
+      }
+
+      @media (max-width: $media-sm) {
+        font-style: 15px;
+        line-height: 25px;
+      }
+
+      @media (max-width: $media-xs) {
+        font-style: 14px;
+        line-height: 24px;
+      }
+    }
+
+    .life_warranty_btn {
+      margin-top: 40px;
+      border: 2px solid #000;
+      z-index: 1;
+      position: relative;
+      padding: 15px 0;
+      max-width: 270px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      //   font-family: $font2;
+      font-weight: $medium;
+      font-size: 16px;
+      @media (max-width: $media-md) {
+        font-size: 15px;
+      }
+
+      @media (max-width: $media-sm) {
+        font-size: 14px;
+      }
+
+      @media (max-width: $media-xs) {
+        font-size: 13px;
+        padding: 10px 0;
+        max-width: 170px;
+      }
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.1rem;
+      color: #000;
+      transition: all 0.4s ease;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: #000;
+        transition: all 0.4s ease;
+      }
+
+      &:hover {
+        color: #fff;
+
+        &::after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

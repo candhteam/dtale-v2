@@ -4,8 +4,8 @@
 
 
 //Recepient Email Address
-// $to_email       = "mail@dtaledecor.com";
-$to_email       = "muneeshvs@codeandhue.com";
+$to_email       = "mail@dtaledecor.com";
+// $to_email       = "anvar@codeandhue.com";
 
 //check if its an ajax request, exit if not
 if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) and strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -54,8 +54,8 @@ $message .= "</body></html>";
 
 $eol = "\r\n";
 
-$headers = "From: " . $first_name . " <" . $email_address . ">" . $eol;
-$headers .= "Reply-To: " . strip_tags($email_address) . "\r\n";
+$headers = "From: " . $first_name . " <" . $to_email  . ">" . $eol;
+$headers .= "Reply-To: " . strip_tags($to_email) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $body .= $message . $eol;
